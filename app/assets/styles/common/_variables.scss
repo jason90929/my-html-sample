@@ -1,0 +1,24 @@
+@import "../fonts/ubuntu";
+
+$white: #fff;
+$black: #000;
+$dark: #3c3940;
+
+$response-1: 768px;
+$response-2: 1280px;
+
+
+// 移除箭頭和藍色外框
+//summary {
+//    &::-webkit-details-marker {
+//        display: none;
+//    }
+//
+//    &:focus {
+//        outline: -webkit-focus-ring-color auto 0;
+//    }
+//}
+
+.pof {
+    position: fixed;
+}

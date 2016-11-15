@@ -1,0 +1,10 @@
+﻿/* AUTHOR */
+	Your title: Jason Tseng
+	Site: tsaistorm@gmail.com
+	Location: Taipei, Taiwan
+
+/* SITE */
+	Last update: 2016/10/18
+	Standards: HTML5, CSS3, JavaScript
+	Components: Gulp, yarn, React, Redux.
+	Software: IntelliJ IDEA 2016.2

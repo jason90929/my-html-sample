@@ -1,0 +1,58 @@
+@media screen {
+    $w: 300px;
+    $h: 205px;
+    .popup {
+        position: fixed;
+        width: $w;
+        height: $h;
+        top: calc(50% - #{$w} / 2);
+        left: calc(50% - #{$h} / 2);
+        background-color: $white;
+        z-index: 5;
+        opacity: 0;
+        visibility: hidden;
+
+        -webkit-transition: opacity .3s cubic-bezier(.5,.61,.355,1), visibility .3s cubic-bezier(.5,.61,.355,1);
+        transition: opacity .3s cubic-bezier(.5,.61,.355,1), visibility .3s cubic-bezier(.5,.61,.355,1);
+
+        .popup-close {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 1;
+        }
+
+        + ._backdrop {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 4;
+            background-color: rgba(122, 122, 122, .6);
+            opacity: 0;
+            visibility: hidden;
+
+            -webkit-transition: opacity .3s cubic-bezier(.5,.61,.355,1), visibility .3s cubic-bezier(.5,.61,.355,1);
+            transition: opacity .3s cubic-bezier(.5,.61,.355,1), visibility .3s cubic-bezier(.5,.61,.355,1);
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+
+            + ._backdrop {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $response-1) {
+
+}
+
+@media screen and (min-width: $response-2) {
+
+}

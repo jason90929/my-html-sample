@@ -1,0 +1,13 @@
+.icon {
+    border: 0;
+    position: relative;
+
+    &.popup-close {
+        $w: 24px;
+        $h: 24px;
+        width: $w;
+        height: $h;
+        background-size: $w $h;
+        background-image: url('../images/popup-close.svg');
+    }
+}

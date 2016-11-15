@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+.sass-cache
+.git
+dist
+node_modules
+bower_components

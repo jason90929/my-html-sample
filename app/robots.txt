@@ -1,0 +1,5 @@
+﻿User-agent: *
+Disallow: /assets/
+Disallow: /sample/
+Allow: /assets/scripts/main.js
+Sitemap: https://jason-tseng.com/sitemap_location.xml
