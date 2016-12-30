@@ -1,19 +1,6 @@
 import './functions/prototype-util';
 import './lib/google-analytics';
-
-const popup = document.getElementById('popup');
-
-window.showPopup = () => {
-  if (popup) {
-    popup.addClass('active');
-  }
-};
-
-window.closePopup = () => {
-  if (popup) {
-    popup.removeClass('active');
-  }
-};
+import { popupInit } from './functions/event-util';
 
 function ready(init) {
   if (document.readyState !== 'loading') {
@@ -27,6 +14,7 @@ function fn() {
   return () => {
     // Do something when DOM ready
 
+    popupInit();
   };
 }
 
