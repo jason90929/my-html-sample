@@ -18,25 +18,54 @@
   "author": "Jason Tseng",
   "license": "ISC",
   "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb-base",
     "env": {
-      "es6": true,
+      "browser": true,
       "node": true,
-      "browser": true
+      "mocha": true,
+      "es6": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
     },
     "rules": {
-      "quotes": [
+      "arrow-parens": [
+        "error",
+        "always"
+      ],
+      "arrow-body-style": [
         2,
-        "single"
-      ]
+        "as-needed"
+      ],
+      "comma-dangle": [
+        2,
+        "always-multiline"
+      ],
+      "import/no-unresolved": 0,
+      "indent": [
+        2,
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "no-console": 1,
+      "prefer-template": 2
     }
   },
   "devDependencies": {
     "babel-core": "^6.13.2",
+    "babel-eslint": "^7.1.1",
     "babel-preset-es2015": "^6.13.2",
+    "babel-preset-es2016": "^6.16.0",
     "babel-preset-react": "^6.11.1",
     "babelify": "^7.3.0",
     "browser-sync": "^2.14.0",
     "browserify": "^13.1.0",
+    "eslint-config-airbnb-base": "^11.0.0",
+    "eslint-plugin-import": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-babel": "^6.1.2",
@@ -44,6 +73,7 @@
     "gulp-cache": "^0.4.5",
     "gulp-clean-css": "^2.0.12",
     "gulp-connect": "^4.2.0",
+    "gulp-eslint": "^3.0.1",
     "gulp-file-include": "^1.0.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-if": "^2.0.1",
